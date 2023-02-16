@@ -8,6 +8,7 @@ import StarProduct from './components/StarProduct.js'
 import HotAccessoriesMenu from './components/HotAccessoriesMenu.js'
 import HotAccessories from './components/HotAccessories.js'
 import ProductReviews from './components/ProductReviews.js'
+import Videos from './components/Videos.js'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ const starProduct = require('./data/data.json').starProduct;
 const hotAccessories = require('./data/data.json').hotAccessories;
 const hotAccessoriesCover = require('./data/data.json').hotAccessoriesCover;
 const productReviews = require('./data/data.json').productReviews;
+const videos = require('./data/data.json').videos;
 
 function App() {
   return (
@@ -25,8 +27,10 @@ function App() {
       <Navbar />
       <Slider start={banner.start}/>
       <Offers offer={offer}/>
+
       <Heading text="STAR PRODUCTS"/>
       <StarProduct starProduct={starProduct}/>
+
       <Heading text="HOT ACCESSORIES"/>
       <HotAccessoriesMenu />
       
@@ -41,6 +45,8 @@ function App() {
       <Heading text="PRODUCT REVIEWS"/>
       <ProductReviews productReviews={productReviews}/>
 
+      <Heading text="VIDEOS"/>
+      <Videos videos={videos}/>
     </Router>
   );
 }
