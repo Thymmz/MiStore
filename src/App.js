@@ -10,7 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const banner = require('./data/data.json').banner
 const offer = require('./data/data.json').offer;
-
+const starProduct = require('./data/data.json').starProduct;
 
 function App() {
   return (
@@ -20,7 +20,8 @@ function App() {
       <Slider start={banner.start}/>
       <Offers offer={offer}/>
       <Heading text="STAR PRODUCTS"/>
-      <StarProduct />
+      <StarProduct starProduct={starProduct}/>
+      <Heading text="HOT ACCESSORIES"/>
     </Router>
   );
 }
