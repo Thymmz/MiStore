@@ -9,7 +9,7 @@ import HotAccessoriesMenu from './components/HotAccessoriesMenu.js'
 import HotAccessories from './components/HotAccessories.js'
 import ProductReviews from './components/ProductReviews.js'
 import Videos from './components/Videos.js'
-
+import Banner from './components/Banner.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const banner = require('./data/data.json').banner
@@ -47,6 +47,10 @@ function App() {
 
       <Heading text="VIDEOS"/>
       <Videos videos={videos}/>
+
+      <Heading text="IN THE PRESS"/>
+      <Banner banner={banner}/>
+
     </Router>
   );
 }
