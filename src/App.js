@@ -7,6 +7,7 @@ import Heading from './components/Heading.js';
 import StarProduct from './components/StarProduct.js'
 import HotAccessoriesMenu from './components/HotAccessoriesMenu.js'
 import HotAccessories from './components/HotAccessories.js'
+import ProductReviews from './components/ProductReviews.js'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -15,6 +16,7 @@ const offer = require('./data/data.json').offer;
 const starProduct = require('./data/data.json').starProduct;
 const hotAccessories = require('./data/data.json').hotAccessories;
 const hotAccessoriesCover = require('./data/data.json').hotAccessoriesCover;
+const productReviews = require('./data/data.json').productReviews;
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
       <Route exact path="/mobileAccessories"  element = {<HotAccessories mobileAccessories={hotAccessories.mobileAccessories} mobileAccessoriesCover={hotAccessoriesCover.mobileAccessories}/>}/>
       </Routes>
 
+      <Heading text="PRODUCT REVIEWS"/>
+      <ProductReviews productReviews={productReviews}/>
 
     </Router>
   );
