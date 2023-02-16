@@ -5,6 +5,7 @@ import Slider from './components/Slider.js';
 import Offers from './components/Offers.js';
 import Heading from './components/Heading.js';
 import StarProduct from './components/StarProduct.js'
+import HotAccessoriesMenu from './components/HotAccessoriesMenu.js'
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ function App() {
       <Heading text="STAR PRODUCTS"/>
       <StarProduct starProduct={starProduct}/>
       <Heading text="HOT ACCESSORIES"/>
+      <HotAccessoriesMenu />
     </Router>
   );
 }
