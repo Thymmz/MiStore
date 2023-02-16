@@ -10,6 +10,8 @@ import HotAccessories from './components/HotAccessories.js'
 import ProductReviews from './components/ProductReviews.js'
 import Videos from './components/Videos.js'
 import Banner from './components/Banner.js'
+import Footer from './components/Footer.js'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const banner = require('./data/data.json').banner
@@ -50,6 +52,8 @@ function App() {
 
       <Heading text="IN THE PRESS"/>
       <Banner banner={banner}/>
+
+      <Footer />
 
     </Router>
   );
