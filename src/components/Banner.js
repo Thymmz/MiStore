@@ -4,6 +4,7 @@ import { CarouselItem } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Banner = ({banner}) => {
+    
   return (
     <Carousel fade>
         {banner.end.map((item, index)=>(
