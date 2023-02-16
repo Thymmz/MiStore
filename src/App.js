@@ -3,6 +3,8 @@ import PreNavbar from './components/PreNavbar';
 import Navbar from './components/Navbar';
 import Slider from './components/Slider.js';
 import Offers from './components/Offers.js';
+import Heading from './components/Heading.js';
+import StarProduct from './components/StarProduct.js'
 
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -17,6 +19,8 @@ function App() {
       <Navbar />
       <Slider start={banner.start}/>
       <Offers offer={offer}/>
+      <Heading text="STAR PRODUCTS"/>
+      <StarProduct />
     </Router>
   );
 }
